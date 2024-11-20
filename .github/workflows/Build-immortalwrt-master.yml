@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build immortalwrt-21.02.07
+name: Build immortalwrt-master
 
 on:
   repository_dispatch:
@@ -22,7 +22,7 @@ on:
 env:
   # REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_URL: https://github.com/immortalwrt/immortalwrt
-  REPO_BRANCH: v21.02.07
+  REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: xiaomimini.config
   DIY_P1_SH: diy-part1.sh
