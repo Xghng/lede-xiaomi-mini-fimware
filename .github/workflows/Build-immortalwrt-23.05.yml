@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build LEDe-openwrt-22.03.7
+name: Build immortalwrt-23.05
 
 on:
   repository_dispatch:
@@ -20,8 +20,9 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_BRANCH: openwrt-22.03.7
+  # REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/immortalwrt/immortalwrt
+  REPO_BRANCH: openwrt-23.05
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: xiaomimini.config
   DIY_P1_SH: diy-part1.sh
